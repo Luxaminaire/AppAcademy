@@ -18,7 +18,7 @@ def alternating_case(str)
     parts = str.split(" ")
     statement = []
     (0...parts.length).each do |i|
-        if i % 2 == 0
+        if (i+2) % 2 == 0
             statement << parts[i].upcase
         else
             statement << parts[i].downcase
