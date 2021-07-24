@@ -26,19 +26,15 @@ end
 
 def ana_array(arr1, arr2)
     hashly = Hash.new(0)
+    hashy = Hash.new(0) 
 
     arr1.each do |ele|
         hashly[ele] += 1
     end
 
     arr2.each do |ele|
-        hashly[ele] += 1
+        hashy[ele] += 1
     end
 
-    hashly.each_key do |k|
-        if hashly[k] % 2 != 0
-            return false
-        end
-    end
-    true
+    hashly == hashy
 end
