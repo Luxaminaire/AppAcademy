@@ -2,8 +2,11 @@
 # The method should return true if the elements are in increasing order, false otherwise.
 # Do not use the built-in Array#sort in your solution :)
 
+require "byebug"
+
 def is_sorted(arr) 
     (0...arr.length - 1).each do |i|
+        debugger
         if arr[i] > arr[i+1]
             return false
         end

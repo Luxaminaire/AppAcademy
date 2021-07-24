@@ -42,7 +42,7 @@ describe "dupe_indices" do
     it "should return an hash where keys are the elements that were repeated in the array and values are the indices where that element appears" do
         expect(dupe_indices(["a", "b", "c", "c", "b"])).to eq({"b"=>[1,4], "c"=>[2,3]})
         expect(dupe_indices(["a", "a", "c", "c", "b", "c"])).to eq({"a"=>[0,1], "c"=>[2,3,5]})
-        expect(dupe_indices(["a", "b", "c"])).to eq({})
+        expect(dupe_indices(["a", "b", "c"])).to eq({}) 
     end
 end
 
